@@ -11,5 +11,6 @@
     "editor.formatOnSave": true,
     "debug.onTaskErrors": "showErrors",
     "extensions.ignoreRecommendations": true,
-    "chat.disableAIFeatures": true
+    "chat.disableAIFeatures": true,
+    "C_Cpp.default.cppStandard": "c++20",
 }
