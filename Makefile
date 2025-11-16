@@ -15,12 +15,12 @@ SHARED_FILES =
 all: program.exe tests.exe
 
 .PHONY: program.exe # Always force rebuild of tests
-program.exe: $(PROGRAM_FILES) $(SHARED_FILES) $(HEADERS)
-	$(CXX) $(CXXFLAGS) $(PROGRAM_FILES) $(SHARED_FILES) -o $@
+program.exe: $(SHARED_FILES) $(PROGRAM_FILES) $(HEADERS)
+	$(CXX) $(CXXFLAGS) $(SHARED_FILES) $(PROGRAM_FILES) -o $@
 
 .PHONY: tests.exe # Always force rebuild of tests
-tests.exe: $(TEST_FILES) $(SHARED_FILES) $(HEADERS)
-	$(CXX) $(CXXFLAGS) $(TEST_FILES) $(SHARED_FILES) -o $@
+tests.exe:  $(SHARED_FILES) $(TEST_FILES) $(HEADERS)
+	$(CXX) $(CXXFLAGS) $(SHARED_FILES) $(TEST_FILES) -o $@
 
 .PHONY: clean
 clean:

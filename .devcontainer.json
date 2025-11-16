@@ -9,6 +9,12 @@
                 "ms-vscode.cpptools",
                 "davidkaiser.kaiser-project-zip",
             ]
+        },
+        "codespaces": {
+            "openFiles": [
+                "main.cpp",
+                "tests.cpp",
+            ]
         }
     },
     "build": {
