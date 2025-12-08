@@ -60,7 +60,7 @@
             "request": "launch",
             "program": "${workspaceFolder}/tests.exe",
             "cwd": "${workspaceFolder}",
-            "preLaunchTask": "export CXX=g++-15 && make tests.exe",
+            "preLaunchTask": "make tests.exe",
         },
     ]
 }
